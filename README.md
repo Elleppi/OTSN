@@ -8,9 +8,9 @@ The simulator includes the following features:
 
 ## movements_simulator.py
 Each coordinate has the following features:
-- pos: position in Cartesian coordinate (0 up to max_area);
-- act = action to perform (1=decrease, 2=stay, 3=increase);
-- speed = speed of the MO (1 up to *max_speed*).
+- *pos* = position in Cartesian coordinate (0 up to max_area);
+- *act* = action to perform (1=decrease, 2=stay, 3=increase);
+- *speed* = speed of the MO (1 up to *max_speed*).
 
 At each step/movement of the MO, a new location (*pos*) of the MO is chosen as random as the value of the *deg_rand* parameter according to the value of *act* and *speed*:
 - if *act* is 1, the next location (*pos*) will be the difference between the current position and the value of *speed*;
@@ -29,14 +29,15 @@ Main steps:
 1. The *train_set* will be based on the first 75% of the whole dataset and the *test_set* the remaining 25%;
 2. A predefined range is chosen for *w_avg*, *w_ml* and *pol_deg*;
 3. The automated algorithm:
-	3.1 applies the cleaning procedure;
-	3.2 applies the features and labels selection mechanism;
-	3.3 computes new predictions;
-	3.4 makes comparisons against the *test_set*;
-	3.5 computes the predictions' accuracy
-	3.6 compares the accuracy against the current best accuracy
-	3.7 returns the best ML model (the one that produces the best accuracy)
-	3.8 computes an amount of new predictions based on the number of *tot_predictions*.
+
+	3. applies the cleaning procedure;
+	3. applies the features and labels selection mechanism;
+	3. computes new predictions;
+	3. makes comparisons against the *test_set*;
+	3. computes the predictions' accuracy
+	3. compares the accuracy against the current best accuracy
+	3. returns the best ML model (the one that produces the best accuracy)
+	3. computes an amount of new predictions based on the number of *tot_predictions*.
 
 ## movements_predictor_test.py
 Similar to **movements_predictor.py**, but the step **3.7** it returns the result of the automated algorithm against the *test_set* without computing new predictions in order to see the actual results of the automated algorithm.
