@@ -30,17 +30,17 @@ Main steps:
 2. A predefined range is chosen for *w_avg*, *w_ml* and *pol_deg*;
 3. The automated algorithm:
 
-	3. applies the cleaning procedure;
-	3. applies the features and labels selection mechanism;
+	1. applies the cleaning procedure;
+	2. applies the features and labels selection mechanism;
 	3. computes new predictions;
-	3. makes comparisons against the *test_set*;
-	3. computes the predictions' accuracy
-	3. compares the accuracy against the current best accuracy
-	3. returns the best ML model (the one that produces the best accuracy)
-	3. computes an amount of new predictions based on the number of *tot_predictions*.
+	4. makes comparisons against the *test_set*;
+	5. computes the predictions' accuracy
+	6. compares the accuracy against the current best accuracy
+	7. returns the best ML model (the one that produces the best accuracy)
+	8. computes an amount of new predictions based on the number of *tot_predictions*.
 
 ## movements_predictor_test.py
-Similar to **movements_predictor.py**, but the step **3.7** it returns the result of the automated algorithm against the *test_set* without computing new predictions in order to see the actual results of the automated algorithm.
+Similar to **movements_predictor.py**, but the step **3.vii** it returns the result of the automated algorithm against the *test_set* without computing new predictions in order to see the actual results of the automated algorithm.
 
 ## mobile_object.py
 1. Define a MO;
