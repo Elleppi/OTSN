@@ -41,9 +41,9 @@ Main steps:
 	8. computes an amount of new predictions based on the number of *tot_predictions*.
 
 ## movements_predictor_test.py
-Similar to **movements_predictor.py**, but the step **3.vii** it returns the result of the automated algorithm against the *test_set* without computing new predictions in order to see the actual results of the automated algorithm.
+Similar to **movements_predictor.py**, but step **3.vii** returns the result of the automated algorithm against the *test_set* without computing new predictions in order to see the actual results of the automated algorithm.
 
 ## mobile_object.py
 1. Define a MO;
 2. Generates simulation for each coordinate;
-3. Either compute new predictions (test=True) or return the result of the automated algorithm.
+3. Either compute new predictions (test=True) or return the result of the automated algorithm (test=False).
