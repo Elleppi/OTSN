@@ -1,3 +1,12 @@
+## REQUIREMENTS
+* *Python3*: on Linux `sudo apt-get install python3.6`;
+* *scikit-learn*: `pip install -U scikit-learn`;
+* *matplotlib*: `pip install -U matplotlib`;
+
+## INSTRUCTIONS
+1. Edit the *movements_predictions.ini* (if you wish);
+2. Run the *mobile_object.py* file (`python3 mobile_object.py`);
+
 ## movements_predictions.ini
 The simulator includes the following features:
 - *max_area*: max_area where the mobile object moves into (m^2);
@@ -44,6 +53,7 @@ Main steps:
 Similar to **movements_predictor.py**, but step **3.vii** returns the result of the automated algorithm against the *test_set* without computing new predictions in order to see the actual results of the automated algorithm.
 
 ## mobile_object.py
-1. Define a MO;
+Main file to execute that:
+1. Defines a MO;
 2. Generates simulation for each coordinate;
-3. Either compute new predictions (test=True) or return the result of the automated algorithm (test=False).
+3. Either computes new predictions (test=True) or returns the result of the automated algorithm (test=False).
