@@ -1,8 +1,8 @@
-## SIMULATOR GENERAL
+## movements_predictions.ini
 The simulator includes the following features:
 - *max_area*: max_area where the mobile object moves into (m^2);
 - *max_speed*: max speed of the mobile object (m/s);
-- *deg_rand*: degree of movement randomness (0 <= *deg_rand* <= 1), where values closer to 0 refers to deterministic movements of the MO (it follows a certain pattern), whereas values closer to 1 refers to random movements;
+- *deg_rand*: degree of movement randomness (0 <= *deg_rand* <= 1), where values closer to 0 refer to deterministic movements of the MO (it follows a certain pattern), whereas values closer to 1 refer to random movements;
 - *n_steps*: number of steps/movements to simulate;
 - *tot_predictions*: number of predictions the ML model has to perform.
 
@@ -22,6 +22,7 @@ At each step/movement of the MO, a new location (*pos*) of the MO is chosen as r
 **example 1:** *max_area*=100, *pos*=98, *speed*=5, *act*=3 --> next pos=97;
 
 **example 2:** *max_area*=100, *pos*=4, *speed*=10, *act*=1 --> next pos=6;
+
 The effect of applying this procedure for both of the coordinates will result on the MO bouncing with the same angle against the map's edges.
 
 ## movements_predictor.py
