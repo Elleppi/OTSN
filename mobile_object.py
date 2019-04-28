@@ -170,8 +170,6 @@ class MobileObject():
             min_len = min(len(X_predictions), len(Y_predictions))
 
             self.plot_prediction(X_axis, Y_axis, X_predictions[:min_len], Y_predictions[:min_len])
-            print("X: ", X_axis[-5:], X_predictions)
-            print("Y: ", Y_axis[-5:], Y_predictions)
 
         return X_predictions[:min_len], Y_predictions[:min_len]
 
@@ -194,7 +192,7 @@ def main():
 
     # If 'test' = True, return only the result of the tests (without new predictions)
     # If 'test' = False, predict new locations based on the MO's movements simulation
-    X_predictions, Y_predictions = mo.predict(X_axis, Y_axis, test=True)
+    X_predictions, Y_predictions = mo.predict(X_axis, Y_axis, test=False)
     
 if __name__ == '__main__':
     main()
