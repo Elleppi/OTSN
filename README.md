@@ -23,6 +23,7 @@ The effect of applying this procedure for both of the coordinates will result on
 
 ## movements_predictor.py
 Main steps:
+
 	1.	The 'train_set' will be based on the first 75% of the whole dataset and the 'test_set' the remaining 25%;
 	2.	A predefined range is chosen for 'w_avg', 'w_ml' and 'pol_deg;
 	3.	The automated algorithm:
