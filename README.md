@@ -1,4 +1,4 @@
-# *"An energy-efficient predictive model for Object Tracking Sensor Networks"* presented at the IEEE World Forum on Internet of Things
+# *"An energy-efficient predictive model for Object Tracking Sensor Networks"* presented at the IEEE 5th World Forum on Internet of Things
 ### REQUIREMENTS
 * *Python3*: on Linux `sudo apt-get install python3.6`;
 * *scikit-learn*: `pip install -U scikit-learn`;
