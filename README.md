@@ -1,13 +1,15 @@
-## REQUIREMENTS
+# *"An energy-efficient predictive model for Object Tracking Sensor Networks"* presented at the IEEE World Forum on Internet of Things
+### REQUIREMENTS
 * *Python3*: on Linux `sudo apt-get install python3.6`;
 * *scikit-learn*: `pip install -U scikit-learn`;
 * *matplotlib*: `pip install -U matplotlib`;
 
-## INSTRUCTIONS
+### INSTRUCTIONS
 1. Edit the *movements_predictions.ini* (if you wish);
 2. Run the *mobile_object.py* file (`python3 mobile_object.py`);
 
-## movements_predictions.ini
+## Files Description
+### movements_predictions.ini
 The simulator includes the following features:
 - *max_area*: max_area where the mobile object moves into (m^2);
 - *max_speed*: max speed of the mobile object (m/s);
@@ -15,7 +17,7 @@ The simulator includes the following features:
 - *n_steps*: number of steps/movements to simulate;
 - *tot_predictions*: number of predictions the ML model has to perform.
 
-## movements_simulator.py
+### movements_simulator.py
 Each coordinate has the following features:
 - *pos* = position in Cartesian coordinate (0 up to max_area);
 - *act* = action to perform (1=decrease, 2=stay, 3=increase);
@@ -34,7 +36,7 @@ At each step/movement of the MO, a new location (*pos*) of the MO is chosen as r
 
 The effect of applying this procedure for both of the coordinates will result on the MO bouncing with the same angle against the map's edges.
 
-## movements_predictor.py
+### movements_predictor.py
 Main steps:
 1. The *train_set* will be based on the first 75% of the whole dataset and the *test_set* the remaining 25%;
 2. A predefined range is chosen for *w_avg*, *w_ml* and *pol_deg*;
@@ -49,10 +51,10 @@ Main steps:
 	7. returns the best ML model (the one that produces the best accuracy)
 	8. computes an amount of new predictions based on the number of *tot_predictions*.
 
-## movements_predictor_test.py
+### movements_predictor_test.py
 Similar to **movements_predictor.py**, but step **3.vii** returns the result of the automated algorithm against the *test_set* without computing new predictions in order to see the actual results of the automated algorithm.
 
-## mobile_object.py
+### mobile_object.py
 Main file to execute that:
 1. Defines a MO;
 2. Generates simulation for each coordinate;
