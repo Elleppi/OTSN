@@ -19,7 +19,7 @@ The simulator includes the following features:
 
 ### movements_simulator.py
 Each coordinate has the following features:
-- *pos* = position in Cartesian coordinate (0 up to max_area);
+- *pos* = position in Cartesian coordinate (0 up to *max_area*);
 - *act* = action to perform (1=decrease, 2=stay, 3=increase);
 - *speed* = speed of the MO (1 up to *max_speed*).
 
@@ -43,7 +43,7 @@ Main steps:
 3. The automated algorithm:
 
 	1. applies the cleaning procedure;
-	2. applies the features and labels selection mechanism;
+	2. performs the features and labels selection mechanism;
 	3. computes new predictions;
 	4. makes comparisons against the *test_set*;
 	5. computes the predictions' accuracy
@@ -58,4 +58,4 @@ Similar to **movements_predictor.py**, but step **3.vii** returns the result of 
 Main file to execute that:
 1. Defines a MO;
 2. Generates simulation for each coordinate;
-3. Either computes new predictions (test=True) or returns the result of the automated algorithm (test=False).
+3. Either computes new predictions (test=False) or returns the result of the automated algorithm (test=True).
