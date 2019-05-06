@@ -60,4 +60,4 @@ Main file to execute that:
 2. Generates simulation for each coordinate;
 3. Either computes new predictions (test=False) or returns the result of the automated algorithm (test=True).
 
-## Go to www.lorenzoparis.it/movements_prediction.html to see the actual presentation of this work
+## Go to www.lorenzoparis.it/movements_predictions.html to see the actual presentation of this work
