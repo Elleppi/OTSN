@@ -1,12 +1,13 @@
 # *"An energy-efficient predictive model for Object Tracking Sensor Networks"* presented at the IEEE 5th World Forum on Internet of Things
 ### REQUIREMENTS
-* *Python3*: on Linux `sudo apt-get install python3.6`;
-* *scikit-learn*: `pip install -U scikit-learn`;
-* *matplotlib*: `pip install -U matplotlib`;
+* `apt-get install python3-tk`;
+* `python3 -mvenv otsn`;
+* `source otsn/bin/activate`;
+* `pip install -r requirements.txt`;
 
 ### INSTRUCTIONS
-1. Edit the *movements_predictions.ini* (if you wish);
-2. Run the *mobile_object.py* file (`python3 mobile_object.py`);
+1. Edit the *movements_predictions.ini* (optional);
+2. Run the *mobile_object.py* file (`python mobile_object.py`);
 
 ## Files Description
 ### movements_predictions.ini
